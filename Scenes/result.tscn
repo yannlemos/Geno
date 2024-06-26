@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://b3ab2js0wo4v8"]
+
+[ext_resource type="Script" path="res://Scripts/result.gd" id="1_pe828"]
+
+[node name="Result" type="Control" node_paths=PackedStringArray("h_box_container")]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_pe828")
+h_box_container = NodePath("HBoxContainer")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 136.0
+offset_bottom = 40.0

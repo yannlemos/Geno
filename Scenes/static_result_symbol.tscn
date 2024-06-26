@@ -1,0 +1,4 @@
+[gd_scene format=3 uid="uid://id0u53e7faj5"]
+
+[node name="StaticResultToken" type="Label"]
+text = "Static"

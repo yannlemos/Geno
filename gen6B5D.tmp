@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://cujii0e7uy0mx"]
+
+[ext_resource type="Script" path="res://geno.gd" id="1_h0oh2"]
+[ext_resource type="Script" path="res://formula.gd" id="2_yu41i"]
+[ext_resource type="Script" path="res://generator.gd" id="3_wt1oc"]
+
+[node name="Geno" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h0oh2")
+
+[node name="Background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.245464, 0.332612, 0.39779, 1)
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 56.0
+offset_right = 117.0
+offset_bottom = 87.0
+text = "Generate"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -496.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="Formula" type="Node" parent="."]
+script = ExtResource("2_yu41i")
+tokens = ["{adjective}", " ", "{type}", " of ", "{name_syllable_1}", "{name_syllable_2}"]
+
+[node name="Generator" type="Node" parent="."]
+script = ExtResource("3_wt1oc")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

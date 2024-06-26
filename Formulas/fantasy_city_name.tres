@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://dh3bn6srmha3v"]
+
+[ext_resource type="Script" path="res://Scripts/formula.gd" id="1_6ga8l"]
+
+[resource]
+script = ExtResource("1_6ga8l")
+template = Array[String](["{adjective}", " ", "{type}", "of", "{name_syllable_1}", "{name_syllable_2}"])
+tokens = {
+"{adjective}": ["Enchanted", "Mystical", "Whimsical", "Labyrinthine", "Celestial", "Spectral", "Arcane", "Ethereal", "Elusive", "Radiant", "Enigmatic", "Serene", "Verdant", "Opulent", "Resplendent", "Ephemeral", "Majestic", "Vibrant", "Timeless", "Esoteric"],
+"{name_syllable_1}": ["Avek", "Sarai", "Amon", "Kiera", "Fael", "Elar", "Eira", "Zane", "Vira", "Nery", "Lyra", "Elio", "Cade", "Rynn", "Raine", "Iona", "Kael", "Aria", "Jace", "Finn"],
+"{name_syllable_2}": ["zara", "kain", "lysa", "nero", "asha", "juna", "kale", "elin", "zeph", "rael", "sora", "finn", "nyla", "dain", "luna", "kira", "emyr", "bryn", "lyra", "zane"],
+"{type}": ["Metropolis", "Hamlet", "Bastion", "Town", "Citadel", "Village", "Port", "Outpost", "Fortress", "Colony", "Sanctuary", "Stronghold", "Settlement", "Citadel", "Borough", "Shire", "Domain", "Haven", "Fief", "Enclave"]
+}
